@@ -4,8 +4,12 @@ settings = Settings()
 
 def get_ollama_models_list():
     models_list = settings.OLLAMA_MODELS
+
+    if not models_list:
+        return []
+    
     ollama_model = [model.strip() for model in models_list.split(",") if model.strip()]
-    return models_list
+    return ollama_model
 
 # testing
 # check_ollama_models = get_ollama_models_list()

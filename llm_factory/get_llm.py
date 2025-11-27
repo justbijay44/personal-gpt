@@ -22,6 +22,6 @@ def get_ollama_llm(model_name: str):
     return llm
 
 # Testing
-check_llm = get_ollama_llm(model_name="gemma3:1b")
-print(check_llm)
-print(type(check_llm))
+# check_llm = get_ollama_llm(model_name="gemma3:1b")
+# print(check_llm)
+# print(type(check_llm))
